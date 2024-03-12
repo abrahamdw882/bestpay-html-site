@@ -303,14 +303,14 @@
 </div>
 </body>
     <script>document.addEventListener('DOMContentLoaded', function() {
-    const menuBtn = document.getElementById('menu-btn');
+    const toggleBtn = document.querySelector('.toggle');
     const closeBtn = document.getElementById('close-btn');
     const sidebar = document.querySelector('.sidebar');
     const container = document.querySelector('.container');
 
-    menuBtn.addEventListener('click', function() {
-        sidebar.classList.add('active');
-        container.classList.add('sidebar-active');
+    toggleBtn.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+        container.classList.toggle('sidebar-active');
     });
 
     closeBtn.addEventListener('click', function() {
@@ -318,5 +318,4 @@
         container.classList.remove('sidebar-active');
     });
 });</script>
-
 </html>
