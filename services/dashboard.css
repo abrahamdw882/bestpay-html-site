@@ -761,3 +761,6 @@ main .recent-orders a{
     }
 
 }
+.dark-mode {
+    --color-background: #181a1e;
+}
